@@ -1,2 +1,1 @@
-# react-crypto-tracker
- 
+Was originally going to be a project that pulled the latest price for a crypto currency depending on what button you press. Didn't realize the API only updated every 5 minutes so no it will just display the time the last price was pulled and the price for top 10 crypto currencies. 

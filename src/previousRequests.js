@@ -1,24 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function PreviousRequests(props='defaut') {
+export default function PreviousRequests(props) {
 
-  let coinHistory = []
-
-//   let coinInfos = 
-//     return( <div class="row">
-//                 <div>{data[0]}</div>
-//                 <div>{data[1]}</div>
-//                 <div>{data[2]}</div>
-//             </div>
-//         )
-//   })
-
-  console.log(props)
+  const [coinData, setCoinData] = useState(props.infoArray);
 
   return (
     <div className="coin-info-chart">
         <div className="coin-name">
-            {props.coinInfo.map((data) => 
+            {console.log(coinData)}
+            {coinData.map((data) =>
             (<div class="row">
                 <div>{data[0]}</div>
                 <div>{data[1]}</div>
